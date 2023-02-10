@@ -7,6 +7,6 @@ const categoriesName = document.querySelector("#categories");
 const itemList = categoriesName.children;
 
 for (const element of itemList) {
-    console.log("Categorie:" + element.querySelector("h2").textContent);
-    console.log("Elements:" + element.querySelector("ul").children.length);
+  console.log("Categorie:" + element.querySelector("h2").textContent);
+  console.log("Elements:" + element.querySelector("ul").children.length);
 }
