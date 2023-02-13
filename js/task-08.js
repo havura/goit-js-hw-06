@@ -7,14 +7,17 @@ const onHandleSubmitForm = (event) => {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (email.value === "" || password.value === "") {
-    alert("Заповність усі поля");
-  }
-
   const userData = { email: email.value, password: password.value };
+
   console.log(userData);
 
-  registerForm.reset();
-};
+  if (email.value === "" || password.value === "") {
+     return alert("Заповність усі поля");
+  }
 
+   event.currentTarget.reset();
+};
+ 
 registerForm.addEventListener("submit", onHandleSubmitForm);
+ 
+
