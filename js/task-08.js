@@ -1,5 +1,7 @@
 const registerForm = document.querySelector(".login-form");
 
+
+
 const onHandleSubmitForm = (event) => {
   event.preventDefault();
 
@@ -15,7 +17,7 @@ const onHandleSubmitForm = (event) => {
 
   console.log(userData);
 
-   event.currentTarget.reset();
+   registerForm.reset();
 };
 
  registerForm.addEventListener("submit", onHandleSubmitForm);
